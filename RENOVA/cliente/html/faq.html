@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+
+<title>Renova</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"    href="../css/base.css">
+<link rel="stylesheet"    href="../css/vendor.css">  
+<link rel="stylesheet"    href="../css/main.css">  
+<link rel="stylesheet"    href="../css/personal.css">  
+<link rel="stylesheet"    href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon"          href="favicon.ico" type="image/x-icon">
+
+<!-- Jquery3.4.1      --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- modernz infinity --><script src="../js/modernizr.js"></script>
+<!-- pace infinity    --><script src="../js/pace.min.js"></script>
+<!-- #rWPP            --><script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+</head>
+<body id="top">
+
+    
+<!-- NAV BAR
+================================================== -->
+<header>
+<a id="header-menu-trigger" href="#0">
+          <span class="header-menu-text">Menu</span>
+           <span class="header-menu-icon"></span>
+    </a> 
+    <nav id="menu-nav-wrap">
+        <a href="#0" class="close-button" title="close"><span>Close</span></a>	
+        <h3>Renova</h3>  
+         <ul class="nav-list">
+             <li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
+             <li><a class="" href="#about" title="">About</a></li>
+             <li><a class="" href="#services" title="">Services</a></li>
+             <li><a class="" href="#portfolio" title="">Works</a></li>
+             <li><a class="" href="listas.html" title="" style="color:orange">Ingresar a mi cuenta</a></li>						
+         </ul>	
+     </nav>  <!-- end #menu-nav-wrap -->
+
+</header> <!-- end header -->  
+    
+<!-- HOME
+================================================== -->
+<section id="home" height=20px>
+	<div class="overlay"></div>
+   			<div class="home-content-table">	
+			   	<div class="home-content-tablecell">
+					<div class="row">
+			   			<div class="col-twelve">			
+                <h2 id="titulo"      class="section-intro animate-this"><br></h2>
+						  	<h3 id="descripcion" class="animate-intro"><br></h3>
+						
+					  	</div> <!-- end col-twelve --> 
+			   		</div> <!-- end row --> 
+				</div> <!-- end home-content-tablecell --> 		   
+			</div> <!-- end home-content-table -->
+</section>
+
+    
+<!-- FAQ
+================================================== -->
+<section id="services">
+<div class="overlay">
+<div class="gradient-overlay">
+	<div class="row narrow section-intro with-bottom-sep animate-this">
+		<div class="col-full">
+			<h1 id="tituloSeccion2"></h1>
+			<p id="descSeccion2"></p>
+			<button class="accordion">Section 1</button>
+			<div class="panelfaq">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			
+			<button class="accordion">Section 2</button>
+			<div class="panelfaq">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			
+			<button class="accordion">Section 3</button>
+			<div class="panelfaq">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+
+    
+
+
+ <p class="lead" id="Nosotros"></p>  			
+   </div> 
+</div> 
+    
+   
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    
+<!-- #FAQn -->
+
+
+</body>
+
+
+<!-- Java Script
+================================================== --> 
+
+<script               src="../js/plugins.js"></script>
+<script               src="../js/main.js"></script>
+<script type="module" src="../js/faq.js"></script> 
+
+</html>
+

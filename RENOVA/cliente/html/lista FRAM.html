@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" 
+        content="width=device-width, 
+                 initial-scale=1, 
+                 shrink-to-fit=no"> 
+  <title> 
+    load data from json file  
+    into a bootstrap table 
+  </title> 
+  
+  <!-- Include Bootstrap for styling -->
+  <link rel="stylesheet"
+        href= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+  
+  <!-- Include the Bootstrap Table CSS 
+  for the table -->
+  <link rel="stylesheet" 
+        href= 
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css"> 
+</head> 
+<body> 
+  <div class="container"> 
+    <h1 class="text text-success text-center "> 
+     LISTA DE PRECIOS FRAM
+    </h1> 
+    <h6 class="text text-success text-center"> 
+      PRECIOS SIN IVA
+    </h6> 
+      <table class="table-striped border-success"> 
+        <thead> 
+          <tr> 
+            <th data-field="codigo"> 
+              <span class="text-success"> 
+                Employee ID 
+              </span> 
+            </th> 
+            <th data-field="descripcion"> 
+              <span class="text-success"> 
+                Employee Name  
+              </span> 
+            </th> 
+            <th data-field="precio"> 
+              <span class="text-success"> 
+                Joining Date  
+              </span> 
+            </th> 
+            <th data-field="stock"> 
+              <span class="text-success"> 
+                Joining Date  
+              </span> 
+            </th> 
+          </tr> 
+        </thead> 
+      </table> 
+  </div> 
+  
+  <!-- Include jQuery and other required 
+  files for Bootstrap -->
+  <script src= 
+"https://code.jquery.com/jquery-3.3.1.min.js"> 
+  </script> 
+  <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+  </script> 
+  <script src= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+  </script> 
+  
+  <!-- Include the JavaScript file 
+  for Bootstrap table -->
+  <script src= 
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"> 
+  </script> 
+  <script type="text/javascript"> 
+    $(document).ready($.getJSON("http://localhost:5050/agrupaciones/fram", function (data) { 
+  
+      // Use the given data to create the table and display it 
+
+      $('table').bootstrapTable({ 
+        data: data
+      }); 
+    }))
+  
+    // Specify the JSON data to be displayed 
+
+
+     
+  </script> 
+</body> 
+</html>
