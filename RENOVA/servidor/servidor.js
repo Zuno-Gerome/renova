@@ -24,5 +24,5 @@ app.get ('/agrupaciones/fram',controller.obtenerListaFram);
 
 
 app.listen(PORT, function () {
-  console.log( "Escuchando en el puerto " + puerto );
+  console.log( "Escuchando en el puerto " + PORT );
 });
