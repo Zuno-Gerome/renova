@@ -16,17 +16,9 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-
-
 app.get ('/agrupaciones',controller.obtenerListas);
 app.get ('/agrupaciones/fram',controller.obtenerListaFram);
 
-
-
-//seteamos el puerto en el cual va a escuchar los pedidos la aplicación
-app.get('/', function(reqest,response){
-  response.render('html/index');
-});
 
 app.listen(PORT, function () {
   console.log( "Escuchando en el puerto " + PORT );
