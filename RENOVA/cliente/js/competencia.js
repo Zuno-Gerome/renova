@@ -1,5 +1,6 @@
 // Esta es la ip y puerto en que necesitamos que esté el backend disponible
-var server = 'http://localhost:5050';
+
+var server = 'http://localhost:5000';
 
 function CompetenciasController () {
 
